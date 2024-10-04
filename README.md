@@ -1,16 +1,19 @@
 ## Hi there 👋
 
-<!--
-**FajarAdhitia/FajarAdhitia** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+👋 Hi there! I’m Fajar Adhitia!
 
-Here are some ideas to get you started:
+🔭 I’m currently working on exciting projects in the world of IoT and mobile development, blending technology with creativity.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🌱 I’m currently learning about advanced machine learning techniques to enhance my programming skills and bring innovative solutions to life.
+
+👯 I’m looking to collaborate on open-source projects that challenge my abilities and foster learning within a dynamic team.
+
+🤔 I’m looking for help with exploring new frameworks and tools that can elevate my coding game to the next level.
+
+💬 Ask me about my projects, coding challenges, or anything tech-related—I love sharing knowledge and insights!
+
+📫 How to reach me: Feel free to connect with me on GitHub or drop me a message via [email/LinkedIn]!
+
+😄 Pronouns: He/Him
+
+⚡ Fun fact: I can solve a mirror Rubik's cube 
