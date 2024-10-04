@@ -1,10 +1,12 @@
 ## Hi there 👋
 
-👋 Hi there! I’m Fajar Adhitia!
+👋 Hi there! I’m Fajar Adhitia Suwandhi!
 
-🔭 I’m currently working on exciting projects in the world of IoT and mobile development, blending technology with creativity.
+🎓 I’m a student from Bengkulu University, majoring in Informatics Engineering.
 
-🌱 I’m currently learning about advanced machine learning techniques to enhance my programming skills and bring innovative solutions to life.
+🔭 I’m currently working on exciting projects in web development and mobile development, blending technology with creativity to build seamless user experiences.
+
+🌱 I’m also diving into UI/UX design, striving to create intuitive interfaces that enhance user interaction.
 
 👯 I’m looking to collaborate on open-source projects that challenge my abilities and foster learning within a dynamic team.
 
@@ -16,4 +18,4 @@
 
 😄 Pronouns: He/Him
 
-⚡ Fun fact: I can solve a mirror Rubik's cube 
+⚡ Fun fact: I can solve a Mirror Rubik's cube 
