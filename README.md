@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Fajar Adhitia Suwandhi</h1>
-<h3 align="center">Web Developer | App Developer | Video Editor | UI/UX Desigb – Crafting seamless web and mobile experiences, while bringing stories to life through video editing</h3>
+<h3 align="center">Web Developer | App Developer | Video Editor | UI/UX Design – Crafting seamless web and mobile experiences, while bringing stories to life through video editing</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=fajaradhitia&label=Profile%20views&color=0e75b6&style=flat" alt="fajaradhitia" /> </p>
 
