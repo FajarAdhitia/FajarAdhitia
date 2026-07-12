@@ -5,10 +5,6 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=fajaradhitia" alt="fajaradhitia" /></a> </p>
 
-- 🔭 I’m currently working on **Aranus Tech**
-
-- 🌱 I’m currently learning **Mobile Development, Backend Developer**
-
 - 💬 Ask me about **project and discussion**
 
 - 📫 How to reach me **fajaradhitia2912@gmail.com**
