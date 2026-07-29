@@ -1,1317 +1,779 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="1200"
-  height="430"
-  viewBox="0 0 1200 430"
-  fill="none"
->
-  <title>Fajar Adhitia — GitHub Profile</title>
-  <desc>Animated futuristic GitHub profile banner for Fajar Adhitia</desc>
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
 
-    <!-- ========================================================= -->
-    <!-- BACKGROUND                                                 -->
-    <!-- ========================================================= -->
+```
+<!-- ================================================= -->
+<!-- BACKGROUND GRADIENT                                -->
+<!-- ================================================= -->
 
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430">
-      <stop offset="0%" stop-color="#020617"/>
-      <stop offset="42%" stop-color="#07111F"/>
-      <stop offset="72%" stop-color="#0A1020"/>
-      <stop offset="100%" stop-color="#030712"/>
-    </linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="1200" y2="430" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#222831"/>
+  <stop offset="0.5" stop-color="#393E46"/>
+  <stop offset="1" stop-color="#222831"/>
+</linearGradient>
 
-    <radialGradient id="cyanGlow">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity=".20"/>
-      <stop offset="35%" stop-color="#22D3EE" stop-opacity=".08"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
-    </radialGradient>
+<radialGradient id="glowCenter">
+  <stop offset="0" stop-color="#DFD0B8" stop-opacity="0.16"/>
+  <stop offset="0.45" stop-color="#948979" stop-opacity="0.07"/>
+  <stop offset="1" stop-color="#222831" stop-opacity="0"/>
+</radialGradient>
 
-    <radialGradient id="purpleGlow">
-      <stop offset="0%" stop-color="#A78BFA" stop-opacity=".20"/>
-      <stop offset="40%" stop-color="#7C3AED" stop-opacity=".08"/>
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
-    </radialGradient>
+<linearGradient id="goldLine" x1="0" y1="0" x2="1" y2="1">
+  <stop stop-color="#DFD0B8"/>
+  <stop offset="0.5" stop-color="#948979"/>
+  <stop offset="1" stop-color="#DFD0B8"/>
+</linearGradient>
 
-    <radialGradient id="avatarGlow">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity=".34"/>
-      <stop offset="38%" stop-color="#22D3EE" stop-opacity=".12"/>
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity=".08"/>
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
-    </radialGradient>
+<linearGradient id="textGradient" x1="350" y1="150" x2="760" y2="250">
+  <stop stop-color="#DFD0B8"/>
+  <stop offset="1" stop-color="#948979"/>
+</linearGradient>
 
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="48%" stop-color="#A78BFA"/>
-      <stop offset="100%" stop-color="#10B981"/>
-    </linearGradient>
+<!-- ================================================= -->
+<!-- PROFILE IMAGE                                      -->
+<!-- ================================================= -->
 
-    <linearGradient id="cyanPurple" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="100%" stop-color="#A78BFA"/>
-    </linearGradient>
+<clipPath id="avatarClip">
+  <circle cx="600" cy="205" r="73"/>
+</clipPath>
 
-    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#22D3EE" stop-opacity=".05"/>
-      <stop offset="50%" stop-color="#E0F2FE" stop-opacity=".95"/>
-      <stop offset="55%" stop-color="#A78BFA" stop-opacity=".05"/>
-      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
-    </linearGradient>
+<!-- ================================================= -->
+<!-- GLOW FILTERS                                       -->
+<!-- ================================================= -->
 
-    <!-- ========================================================= -->
-    <!-- GRID                                                        -->
-    <!-- ========================================================= -->
+<filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+  <feGaussianBlur stdDeviation="7"/>
+</filter>
 
-    <pattern
-      id="grid"
-      width="32"
-      height="32"
-      patternUnits="userSpaceOnUse"
-    >
-      <path
-        d="M32 0H0V32"
-        stroke="#64748B"
-        stroke-opacity=".055"
-        stroke-width="1"
-      />
-    </pattern>
+<filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+  <feGaussianBlur stdDeviation="3"/>
+</filter>
 
-    <pattern
-      id="microGrid"
-      width="8"
-      height="8"
-      patternUnits="userSpaceOnUse"
-    >
-      <path
-        d="M8 0H0V8"
-        stroke="#22D3EE"
-        stroke-opacity=".018"
-        stroke-width=".5"
-      />
-    </pattern>
+<!-- ================================================= -->
+<!-- GRID PATTERN                                       -->
+<!-- ================================================= -->
 
-    <!-- ========================================================= -->
-    <!-- AVATAR CLIP                                                 -->
-    <!-- ========================================================= -->
-
-    <clipPath id="avatarClip">
-      <circle cx="930" cy="211" r="78"/>
-    </clipPath>
-
-    <!-- ========================================================= -->
-    <!-- GLOWS                                                       -->
-    <!-- ========================================================= -->
-
-    <filter
-      id="glow"
-      x="-100%"
-      y="-100%"
-      width="300%"
-      height="300%"
-    >
-      <feGaussianBlur
-        stdDeviation="4"
-        result="blur"
-      />
-
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <filter
-      id="softGlow"
-      x="-100%"
-      y="-100%"
-      width="300%"
-      height="300%"
-    >
-      <feGaussianBlur stdDeviation="12"/>
-    </filter>
-
-    <filter
-      id="avatarSoftGlow"
-      x="-100%"
-      y="-100%"
-      width="300%"
-      height="300%"
-    >
-      <feGaussianBlur stdDeviation="20"/>
-    </filter>
-
-    <!-- ========================================================= -->
-    <!-- MASK                                                        -->
-    <!-- ========================================================= -->
-
-    <linearGradient id="avatarShade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#020617" stop-opacity=".05"/>
-      <stop offset="55%" stop-color="#020617" stop-opacity=".05"/>
-      <stop offset="100%" stop-color="#020617" stop-opacity=".38"/>
-    </linearGradient>
-
-    <clipPath id="frameClip">
-      <rect
-        x="0"
-        y="0"
-        width="1200"
-        height="430"
-        rx="26"
-      />
-    </clipPath>
+<pattern
+  id="grid"
+  width="40"
+  height="40"
+  patternUnits="userSpaceOnUse"
+>
+  <path
+    d="M40 0H0V40"
+    stroke="#DFD0B8"
+    stroke-opacity="0.035"
+    stroke-width="1"
+  />
+</pattern>
+```
 
   </defs>
 
+  <!-- =================================================== -->
 
-  <!-- ============================================================= -->
-  <!-- BACKGROUND                                                     -->
-  <!-- ============================================================= -->
+  <!-- BACKGROUND                                          -->
 
-  <rect
-    width="1200"
-    height="430"
-    rx="26"
-    fill="url(#bg)"
-  />
+  <!-- =================================================== -->
 
-  <rect
-    width="1200"
-    height="430"
-    rx="26"
-    fill="url(#grid)"
-  />
+<rect
+ width="1200"
+ height="430"
+ rx="22"
+ fill="url(#bg)"
+/>
 
-  <rect
-    width="1200"
-    height="430"
-    rx="26"
-    fill="url(#microGrid)"
-  />
+<rect
+ width="1200"
+ height="430"
+ rx="22"
+ fill="url(#grid)"
+/>
 
+<ellipse
+ cx="600"
+ cy="210"
+ rx="330"
+ ry="220"
+ fill="url(#glowCenter)"
+/>
 
-  <!-- ============================================================= -->
-  <!-- ATMOSPHERE                                                     -->
-  <!-- ============================================================= -->
+  <!-- =================================================== -->
 
-  <ellipse
-    cx="920"
-    cy="200"
-    rx="340"
-    ry="280"
-    fill="url(#cyanGlow)"
-  >
-    <animate
-      attributeName="opacity"
-      values=".65;1;.65"
-      dur="8s"
-      repeatCount="indefinite"
-    />
+  <!-- AMBIENT DECORATIVE GLOW                             -->
+
+  <!-- =================================================== -->
+
+<circle
+ cx="600"
+ cy="205"
+ r="135"
+ stroke="#948979"
+ stroke-opacity="0.08"
+ stroke-width="22"
+ filter="url(#softGlow)"
+/>
+
+<circle
+ cx="600"
+ cy="205"
+ r="110"
+ stroke="#DFD0B8"
+ stroke-opacity="0.08"
+ stroke-width="12"
+ filter="url(#smallGlow)"
+/>
+
+  <!-- =================================================== -->
+
+  <!-- LEFT ORBIT SYSTEM                                    -->
+
+  <!-- =================================================== -->
+
+  <g opacity="0.7">
+
+```
+<ellipse
+  cx="600"
+  cy="205"
+  rx="210"
+  ry="92"
+  stroke="#948979"
+  stroke-opacity="0.22"
+  stroke-width="1"
+  transform="rotate(-12 600 205)"
+/>
+
+<ellipse
+  cx="600"
+  cy="205"
+  rx="260"
+  ry="125"
+  stroke="#DFD0B8"
+  stroke-opacity="0.12"
+  stroke-width="1"
+  transform="rotate(18 600 205)"
+/>
+
+<ellipse
+  cx="600"
+  cy="205"
+  rx="320"
+  ry="160"
+  stroke="#948979"
+  stroke-opacity="0.09"
+  stroke-width="1"
+  transform="rotate(-27 600 205)"
+/>
+```
+
+  </g>
+
+  <!-- =================================================== -->
+
+  <!-- ANIMATED ORBIT                                      -->
+
+  <!-- =================================================== -->
+
+<ellipse
+cx="600"
+cy="205"
+rx="250"
+ry="112"
+stroke="url(#goldLine)"
+stroke-width="2"
+stroke-linecap="round"
+stroke-dasharray="8 18"
+opacity="0.7"
+transform="rotate(-20 600 205)"
+
+>
+
+```
+<animateTransform
+```
+
+```
+  attributeName="transform"
+  type="rotate"
+  from="-20 600 205"
+  to="340 600 205"
+  dur="28s"
+  repeatCount="indefinite"
+/>
+```
+
   </ellipse>
 
-  <ellipse
-    cx="1070"
-    cy="350"
-    rx="280"
-    ry="210"
-    fill="url(#purpleGlow)"
-  >
-    <animate
-      attributeName="opacity"
-      values=".55;.9;.55"
-      dur="10s"
-      repeatCount="indefinite"
-    />
-  </ellipse>
+  <!-- =================================================== -->
 
+  <!-- TOP LABEL                                           -->
 
-  <!-- ============================================================= -->
-  <!-- FRAME                                                          -->
-  <!-- ============================================================= -->
+  <!-- =================================================== -->
 
-  <rect
-    x="1"
-    y="1"
-    width="1198"
-    height="428"
-    rx="25"
-    stroke="#334155"
-    stroke-opacity=".65"
-  />
+<text
+x="600"
+y="44"
+text-anchor="middle"
+fill="#948979"
+font-family="Arial, Helvetica, sans-serif"
+font-size="11"
+letter-spacing="4"
 
-  <rect
-    x="3"
-    y="3"
-    width="1194"
-    height="424"
-    rx="23"
-    stroke="url(#accent)"
-    stroke-opacity=".14"
-  >
-    <animate
-      attributeName="stroke-opacity"
-      values=".08;.22;.08"
-      dur="7s"
-      repeatCount="indefinite"
-    />
-  </rect>
+>
 
+```
+ENGINEERING • INTELLIGENCE • DIGITAL SYSTEMS
+```
 
-  <!-- ============================================================= -->
-  <!-- CORNER HUD                                                     -->
-  <!-- ============================================================= -->
-
-  <g
-    stroke="#22D3EE"
-    stroke-width="1.2"
-  >
-
-    <path
-      d="M26 76V26H76"
-      stroke-opacity=".55"
-    />
-
-    <path
-      d="M1124 26H1174V76"
-      stroke-opacity=".45"
-    />
-
-    <path
-      d="M26 354V404H76"
-      stroke-opacity=".25"
-    />
-
-    <path
-      d="M1124 404H1174V354"
-      stroke-opacity=".35"
-    />
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- TOP SYSTEM ICON                                                -->
-  <!-- ============================================================= -->
-
-  <g transform="translate(76 60)">
-
-    <circle
-      r="21"
-      stroke="#22D3EE"
-      stroke-opacity=".18"
-    />
-
-    <circle
-      r="13"
-      stroke="#A78BFA"
-      stroke-opacity=".25"
-    />
-
-    <circle
-      r="4"
-      fill="#22D3EE"
-      filter="url(#glow)"
-    >
-      <animate
-        attributeName="r"
-        values="3;5;3"
-        dur="3s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <path
-      d="M0-27V-17M0 17V27M-27 0H-17M17 0H27"
-      stroke="#22D3EE"
-      stroke-opacity=".35"
-    />
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- SYSTEM LABEL                                                    -->
-  <!-- ============================================================= -->
-
-  <g transform="translate(120 64)">
-
-    <circle
-      cx="5"
-      cy="5"
-      r="4"
-      fill="#10B981"
-    >
-      <animate
-        attributeName="opacity"
-        values="1;.25;1"
-        dur="2s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <text
-      x="18"
-      y="9"
-      fill="#64748B"
-      font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-      font-size="10"
-      letter-spacing="2"
-    >
-      GITHUB / PROFILE
-    </text>
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- MAIN NAME                                                       -->
-  <!-- ============================================================= -->
-
-  <text
-    x="120"
-    y="155"
-    fill="#F8FAFC"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="48"
-    font-weight="700"
-    letter-spacing="-1.8"
-  >
-    Fajar Adhitia
   </text>
 
+  <!-- =================================================== -->
 
-  <!-- ============================================================= -->
-  <!-- ACCENT LINE                                                     -->
-  <!-- ============================================================= -->
+  <!-- LEFT CAPABILITY                                     -->
 
-  <rect
-    x="120"
-    y="173"
-    width="420"
-    height="2"
-    rx="1"
-    fill="url(#accent)"
-    opacity=".75"
-  />
-
-  <rect
-    x="120"
-    y="173"
-    width="90"
-    height="2"
-    fill="url(#scan)"
-  >
-    <animate
-      attributeName="x"
-      from="80"
-      to="550"
-      dur="4.5s"
-      repeatCount="indefinite"
-    />
-  </rect>
-
-
-  <!-- ============================================================= -->
-  <!-- ROLE                                                             -->
-  <!-- ============================================================= -->
-
-  <text
-    x="120"
-    y="210"
-    fill="#67E8F9"
-    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-    font-size="14"
-    font-weight="600"
-    letter-spacing="2.8"
-  >
-    SOFTWARE DEVELOPER
-  </text>
-
-
-  <!-- ============================================================= -->
-  <!-- USERNAME                                                         -->
-  <!-- ============================================================= -->
-
-  <text
-    x="120"
-    y="240"
-    fill="#64748B"
-    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-    font-size="12"
-  >
-    @
-  </text>
-
-  <text
-    x="132"
-    y="240"
-    fill="#CBD5E1"
-    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-    font-size="12"
-  >
-    FajarAdhitia
-  </text>
-
-
-  <!-- ============================================================= -->
-  <!-- DESCRIPTION                                                      -->
-  <!-- ============================================================= -->
-
-  <text
-    x="120"
-    y="274"
-    fill="#94A3B8"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="13"
-  >
-    Building digital experiences,
-  </text>
-
-  <text
-    x="120"
-    y="296"
-    fill="#94A3B8"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="13"
-  >
-    intelligent systems &amp; connected technology.
-  </text>
-
-
-  <!-- ============================================================= -->
-  <!-- TECH BADGES                                                      -->
-  <!-- ============================================================= -->
-
-  <g transform="translate(120 322)">
-
-    <rect
-      width="78"
-      height="27"
-      rx="13.5"
-      fill="#0F172A"
-      stroke="#22D3EE"
-      stroke-opacity=".30"
-    />
-
-    <text
-      x="39"
-      y="17"
-      text-anchor="middle"
-      fill="#67E8F9"
-      font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-      font-size="9"
-      letter-spacing="1"
-    >
-      WEB
-    </text>
-
-
-    <rect
-      x="90"
-      width="78"
-      height="27"
-      rx="13.5"
-      fill="#0F172A"
-      stroke="#A78BFA"
-      stroke-opacity=".30"
-    />
-
-    <text
-      x="129"
-      y="17"
-      text-anchor="middle"
-      fill="#C4B5FD"
-      font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-      font-size="9"
-      letter-spacing="1"
-    >
-      IoT
-    </text>
-
-
-    <rect
-      x="180"
-      width="94"
-      height="27"
-      rx="13.5"
-      fill="#0F172A"
-      stroke="#10B981"
-      stroke-opacity=".30"
-    />
-
-    <text
-      x="227"
-      y="17"
-      text-anchor="middle"
-      fill="#6EE7B7"
-      font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-      font-size="9"
-      letter-spacing="1"
-    >
-      AI / ML
-    </text>
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- AVATAR ATMOSPHERE                                               -->
-  <!-- ============================================================= -->
-
-  <circle
-    cx="930"
-    cy="211"
-    r="142"
-    fill="url(#avatarGlow)"
-    filter="url(#avatarSoftGlow)"
-  >
-    <animate
-      attributeName="r"
-      values="128;148;128"
-      dur="6s"
-      repeatCount="indefinite"
-    />
-
-    <animate
-      attributeName="opacity"
-      values=".55;1;.55"
-      dur="6s"
-      repeatCount="indefinite"
-    />
-  </circle>
-
-
-  <!-- ============================================================= -->
-  <!-- AVATAR OUTER HEX / HUD                                         -->
-  <!-- ============================================================= -->
-
-  <path
-    d="
-      M930 94
-      L1031 153
-      L1031 269
-      L930 328
-      L829 269
-      L829 153
-      Z
-    "
-    stroke="#22D3EE"
-    stroke-opacity=".12"
-    stroke-width="1"
-  />
-
-  <path
-    d="
-      M930 105
-      L1020 158
-      L1020 264
-      L930 317
-      L840 264
-      L840 158
-      Z
-    "
-    stroke="#A78BFA"
-    stroke-opacity=".10"
-  />
-
-
-  <!-- ============================================================= -->
-  <!-- GITHUB AVATAR                                                   -->
-  <!-- ============================================================= -->
-
-  <circle
-    cx="930"
-    cy="211"
-    r="82"
-    fill="#020617"
-    stroke="#22D3EE"
-    stroke-opacity=".22"
-    stroke-width="8"
-  />
-
-  <!--
-    GitHub automatically provides the user's profile image
-    through this endpoint.
-  -->
-
-  <image
-    x="852"
-    y="133"
-    width="156"
-    height="156"
-    href="https://github.com/FajarAdhitia.png"
-    xlink:href="https://github.com/FajarAdhitia.png"
-    preserveAspectRatio="xMidYMid slice"
-    clip-path="url(#avatarClip)"
-  />
-
-
-  <!-- ============================================================= -->
-  <!-- AVATAR CINEMATIC SHADE                                         -->
-  <!-- ============================================================= -->
-
-  <circle
-    cx="930"
-    cy="211"
-    r="78"
-    fill="url(#avatarShade)"
-    clip-path="url(#avatarClip)"
-  />
-
-
-  <!-- ============================================================= -->
-  <!-- AVATAR FRAME                                                    -->
-  <!-- ============================================================= -->
-
-  <circle
-    cx="930"
-    cy="211"
-    r="81"
-    stroke="url(#accent)"
-    stroke-width="2"
-    stroke-opacity=".75"
-  >
-    <animate
-      attributeName="stroke-opacity"
-      values=".45;1;.45"
-      dur="5s"
-      repeatCount="indefinite"
-    />
-  </circle>
-
-
-  <circle
-    cx="930"
-    cy="211"
-    r="87"
-    stroke="#22D3EE"
-    stroke-width="1"
-    stroke-opacity=".15"
-  />
-
-
-  <!-- ============================================================= -->
-  <!-- AVATAR SCANLINE                                                -->
-  <!-- ============================================================= -->
-
-  <g clip-path="url(#avatarClip)">
-
-    <rect
-      x="850"
-      y="132"
-      width="160"
-      height="3"
-      fill="url(#scan)"
-      opacity=".8"
-    >
-      <animate
-        attributeName="y"
-        from="130"
-        to="290"
-        dur="4s"
-        repeatCount="indefinite"
-      />
-    </rect>
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- AVATAR CROSSHAIR                                               -->
-  <!-- ============================================================= -->
-
-  <g
-    stroke="#E0F2FE"
-    stroke-opacity=".28"
-    stroke-width="1"
-  >
-
-    <path
-      d="M930 119V138"
-    />
-
-    <path
-      d="M930 284V303"
-    />
-
-    <path
-      d="M838 211H857"
-    />
-
-    <path
-      d="M1003 211H1022"
-    />
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- ORBIT 1                                                         -->
-  <!-- ============================================================= -->
-
-  <g transform="translate(930 211)">
-
-    <ellipse
-      rx="143"
-      ry="48"
-      transform="rotate(-22)"
-      stroke="#22D3EE"
-      stroke-opacity=".32"
-      stroke-width="1"
-    />
-
-    <ellipse
-      rx="143"
-      ry="48"
-      transform="rotate(-22)"
-      stroke="#22D3EE"
-      stroke-opacity=".055"
-      stroke-width="6"
-    />
-
-    <g>
-
-      <circle
-        cx="143"
-        cy="0"
-        r="3.5"
-        fill="#67E8F9"
-        filter="url(#glow)"
-      />
-
-      <circle
-        cx="143"
-        cy="0"
-        r="7"
-        fill="#22D3EE"
-        opacity=".08"
-      />
-
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="0"
-        to="360"
-        dur="13s"
-        repeatCount="indefinite"
-      />
-
-    </g>
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- ORBIT 2                                                         -->
-  <!-- ============================================================= -->
-
-  <g transform="translate(930 211)">
-
-    <ellipse
-      rx="128"
-      ry="69"
-      transform="rotate(55)"
-      stroke="#A78BFA"
-      stroke-opacity=".27"
-      stroke-width="1"
-    />
-
-    <g>
-
-      <circle
-        cx="128"
-        cy="0"
-        r="3"
-        fill="#C4B5FD"
-        filter="url(#glow)"
-      />
-
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="360"
-        to="0"
-        dur="17s"
-        repeatCount="indefinite"
-      />
-
-    </g>
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- ORBIT 3                                                         -->
-  <!-- ============================================================= -->
-
-  <g transform="translate(930 211)">
-
-    <ellipse
-      rx="116"
-      ry="38"
-      transform="rotate(87)"
-      stroke="#10B981"
-      stroke-opacity=".24"
-      stroke-width="1"
-    />
-
-    <g>
-
-      <circle
-        cx="116"
-        cy="0"
-        r="2.5"
-        fill="#6EE7B7"
-      />
-
-      <animateTransform
-        attributeName="transform"
-        type="rotate"
-        from="0"
-        to="360"
-        dur="10s"
-        repeatCount="indefinite"
-      />
-
-    </g>
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- ORBIT PARTICLES                                                 -->
-  <!-- ============================================================= -->
+  <!-- =================================================== -->
 
   <g>
 
-    <circle
-      cx="796"
-      cy="108"
-      r="2"
-      fill="#22D3EE"
-    >
-      <animate
-        attributeName="opacity"
-        values=".1;1;.1"
-        dur="3s"
-        repeatCount="indefinite"
-      />
-    </circle>
+```
+<line
+  x1="95"
+  y1="125"
+  x2="340"
+  y2="170"
+  stroke="#948979"
+  stroke-opacity="0.3"
+  stroke-width="1"
+/>
 
-    <circle
-      cx="1082"
-      cy="123"
-      r="1.5"
-      fill="#A78BFA"
-    >
-      <animate
-        attributeName="opacity"
-        values="1;.15;1"
-        dur="4s"
-        repeatCount="indefinite"
-      />
-    </circle>
+<circle
+  cx="95"
+  cy="125"
+  r="3"
+  fill="#DFD0B8"
+/>
 
-    <circle
-      cx="1090"
-      cy="305"
-      r="2"
-      fill="#10B981"
-    >
-      <animate
-        attributeName="opacity"
-        values=".15;1;.15"
-        dur="2.8s"
-        repeatCount="indefinite"
-      />
-    </circle>
+<circle
+  cx="95"
+  cy="125"
+  r="8"
+  stroke="#DFD0B8"
+  stroke-opacity="0.18"
+/>
 
-    <circle
-      cx="774"
-      cy="316"
-      r="1.5"
-      fill="#22D3EE"
-    >
-      <animate
-        attributeName="opacity"
-        values="1;.1;1"
-        dur="3.5s"
-        repeatCount="indefinite"
-      />
-    </circle>
+<text
+  x="95"
+  y="104"
+  fill="#DFD0B8"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="14"
+  font-weight="700"
+  letter-spacing="2"
+>
+  IoT SYSTEMS
+</text>
+
+<text
+  x="95"
+  y="145"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11"
+  letter-spacing="1"
+>
+  ESP32 • SENSORS • REAL-TIME
+</text>
+```
 
   </g>
 
+  <!-- =================================================== -->
 
-  <!-- ============================================================= -->
-  <!-- TERMINAL / GITHUB DATA                                         -->
-  <!-- ============================================================= -->
+  <!-- LEFT LOWER CAPABILITY                               -->
 
-  <g
-    transform="translate(760 60)"
-    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-  >
-
-    <text
-      x="0"
-      y="0"
-      fill="#475569"
-      font-size="9"
-      letter-spacing="1.2"
-    >
-      ~/FajarAdhitia
-    </text>
-
-    <text
-      x="0"
-      y="22"
-      fill="#22D3EE"
-      font-size="10"
-    >
-      $
-    </text>
-
-    <text
-      x="15"
-      y="22"
-      fill="#CBD5E1"
-      font-size="10"
-    >
-      whoami
-    </text>
-
-    <text
-      x="78"
-      y="22"
-      fill="#F8FAFC"
-      font-size="10"
-    >
-      FajarAdhitia
-    </text>
-
-    <text
-      x="0"
-      y="42"
-      fill="#22D3EE"
-      font-size="10"
-    >
-      $
-    </text>
-
-    <text
-      x="15"
-      y="42"
-      fill="#CBD5E1"
-      font-size="10"
-    >
-      status
-    </text>
-
-    <text
-      x="68"
-      y="42"
-      fill="#10B981"
-      font-size="10"
-    >
-      ONLINE
-    </text>
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- CURSOR                                                          -->
-  <!-- ============================================================= -->
-
-  <rect
-    x="760"
-    y="112"
-    width="6"
-    height="11"
-    fill="#22D3EE"
-  >
-    <animate
-      attributeName="opacity"
-      values="1;0;1"
-      dur="1s"
-      repeatCount="indefinite"
-    />
-  </rect>
-
-
-  <!-- ============================================================= -->
-  <!-- RIGHT DATA LINES                                                -->
-  <!-- ============================================================= -->
-
-  <g opacity=".5">
-
-    <path
-      d="M1030 348H1135"
-      stroke="#334155"
-    />
-
-    <path
-      d="M1000 360H1100"
-      stroke="#334155"
-    />
-
-    <path
-      d="M970 372H1140"
-      stroke="#334155"
-    />
-
-    <circle
-      cx="1135"
-      cy="348"
-      r="2"
-      fill="#22D3EE"
-    >
-      <animate
-        attributeName="opacity"
-        values=".1;1;.1"
-        dur="2.4s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <circle
-      cx="1100"
-      cy="360"
-      r="2"
-      fill="#A78BFA"
-    >
-      <animate
-        attributeName="opacity"
-        values="1;.15;1"
-        dur="3s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <circle
-      cx="1140"
-      cy="372"
-      r="2"
-      fill="#10B981"
-    >
-      <animate
-        attributeName="opacity"
-        values=".1;1;.1"
-        dur="2.8s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-  </g>
-
-
-  <!-- ============================================================= -->
-  <!-- FLOATING PARTICLES                                              -->
-  <!-- ============================================================= -->
+  <!-- =================================================== -->
 
   <g>
 
-    <circle
-      cx="610"
-      cy="91"
-      r="1.4"
-      fill="#22D3EE"
-    >
-      <animate
-        attributeName="cy"
-        values="91;77;91"
-        dur="5s"
-        repeatCount="indefinite"
-      />
+```
+<line
+  x1="85"
+  y1="300"
+  x2="340"
+  y2="245"
+  stroke="#948979"
+  stroke-opacity="0.3"
+  stroke-width="1"
+/>
 
-      <animate
-        attributeName="opacity"
-        values=".1;1;.1"
-        dur="5s"
-        repeatCount="indefinite"
-      />
-    </circle>
+<circle
+  cx="85"
+  cy="300"
+  r="3"
+  fill="#DFD0B8"
+/>
 
-    <circle
-      cx="690"
-      cy="300"
-      r="1.3"
-      fill="#A78BFA"
-    >
-      <animate
-        attributeName="cy"
-        values="300;284;300"
-        dur="6s"
-        repeatCount="indefinite"
-      />
+<circle
+  cx="85"
+  cy="300"
+  r="8"
+  stroke="#DFD0B8"
+  stroke-opacity="0.18"
+/>
 
-      <animate
-        attributeName="opacity"
-        values=".1;.8;.1"
-        dur="6s"
-        repeatCount="indefinite"
-      />
-    </circle>
+<text
+  x="85"
+  y="279"
+  fill="#DFD0B8"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="14"
+  font-weight="700"
+  letter-spacing="2"
+>
+  AI / MACHINE LEARNING
+</text>
 
-    <circle
-      cx="1145"
-      cy="100"
-      r="1.5"
-      fill="#10B981"
-    >
-      <animate
-        attributeName="cy"
-        values="100;115;100"
-        dur="4s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <circle
-      cx="585"
-      cy="348"
-      r="1.2"
-      fill="#22D3EE"
-    >
-      <animate
-        attributeName="cx"
-        values="585;605;585"
-        dur="7s"
-        repeatCount="indefinite"
-      />
-    </circle>
+<text
+  x="85"
+  y="320"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11"
+  letter-spacing="1"
+>
+  LSTM • TENSORFLOW • TFLITE
+</text>
+```
 
   </g>
 
+  <!-- =================================================== -->
 
-  <!-- ============================================================= -->
-  <!-- SCANNING BEAM                                                  -->
-  <!-- ============================================================= -->
+  <!-- RIGHT CAPABILITY                                    -->
 
-  <g
-    clip-path="url(#frameClip)"
-    opacity=".35"
-  >
+  <!-- =================================================== -->
 
-    <rect
-      x="-200"
-      y="0"
-      width="190"
-      height="430"
-      fill="url(#scan)"
-    >
-      <animate
-        attributeName="x"
-        from="-200"
-        to="1200"
-        dur="14s"
-        repeatCount="indefinite"
-      />
-    </rect>
+  <g>
 
-  </g>
+```
+<line
+  x1="1105"
+  y1="125"
+  x2="860"
+  y2="170"
+  stroke="#948979"
+  stroke-opacity="0.3"
+  stroke-width="1"
+/>
 
+<circle
+  cx="1105"
+  cy="125"
+  r="3"
+  fill="#DFD0B8"
+/>
 
-  <!-- ============================================================= -->
-  <!-- BOTTOM STATUS                                                   -->
-  <!-- ============================================================= -->
+<circle
+  cx="1105"
+  cy="125"
+  r="8"
+  stroke="#DFD0B8"
+  stroke-opacity="0.18"
+/>
 
-  <g
-    transform="translate(120 395)"
-    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
-  >
+<text
+  x="1105"
+  y="104"
+  text-anchor="end"
+  fill="#DFD0B8"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="14"
+  font-weight="700"
+  letter-spacing="2"
+>
+  WEB ENGINEERING
+</text>
 
-    <circle
-      cx="4"
-      cy="-3"
-      r="3"
-      fill="#10B981"
-    >
-      <animate
-        attributeName="opacity"
-        values="1;.25;1"
-        dur="2s"
-        repeatCount="indefinite"
-      />
-    </circle>
-
-    <text
-      x="15"
-      y="0"
-      fill="#64748B"
-      font-size="9"
-      letter-spacing="1.5"
-    >
-      SYSTEM ONLINE
-    </text>
-
-    <text
-      x="210"
-      y="0"
-      fill="#334155"
-      font-size="9"
-      letter-spacing="1"
-    >
-      github.com/FajarAdhitia
-    </text>
-
-    <text
-      x="1015"
-      y="0"
-      text-anchor="end"
-      fill="#334155"
-      font-size="9"
-      letter-spacing="1"
-    >
-      FAJARADHITIA / 2026
-    </text>
+<text
+  x="1105"
+  y="145"
+  text-anchor="end"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11"
+  letter-spacing="1"
+>
+  JAVASCRIPT • GSAP • WEBGL
+</text>
+```
 
   </g>
 
+  <!-- =================================================== -->
 
-  <!-- ============================================================= -->
-  <!-- MICRO DATA MARKERS                                             -->
-  <!-- ============================================================= -->
+  <!-- RIGHT LOWER CAPABILITY                              -->
 
-  <g fill="#22D3EE">
+  <!-- =================================================== -->
 
-    <circle cx="600" cy="50" r="1"/>
-    <circle cx="618" cy="50" r="1"/>
-    <circle cx="636" cy="50" r="1"/>
-    <circle cx="654" cy="50" r="1"/>
+  <g>
+
+```
+<line
+  x1="1115"
+  y1="300"
+  x2="860"
+  y2="245"
+  stroke="#948979"
+  stroke-opacity="0.3"
+  stroke-width="1"
+/>
+
+<circle
+  cx="1115"
+  cy="300"
+  r="3"
+  fill="#DFD0B8"
+/>
+
+<circle
+  cx="1115"
+  cy="300"
+  r="8"
+  stroke="#DFD0B8"
+  stroke-opacity="0.18"
+/>
+
+<text
+  x="1115"
+  y="279"
+  text-anchor="end"
+  fill="#DFD0B8"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="14"
+  font-weight="700"
+  letter-spacing="2"
+>
+  APP & CLOUD
+</text>
+
+<text
+  x="1115"
+  y="320"
+  text-anchor="end"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11"
+  letter-spacing="1"
+>
+  KOTLIN • FIREBASE • API
+</text>
+```
 
   </g>
 
-  <g fill="#A78BFA">
+  <!-- =================================================== -->
 
-    <circle cx="600" cy="56" r="1"/>
-    <circle cx="618" cy="56" r="1"/>
-    <circle cx="636" cy="56" r="1"/>
-    <circle cx="654" cy="56" r="1"/>
+  <!-- PROFILE CORE                                        -->
+
+  <!-- =================================================== -->
+
+<circle
+ cx="600"
+ cy="205"
+ r="78"
+ fill="#222831"
+ stroke="#948979"
+ stroke-opacity="0.35"
+ stroke-width="1"
+/>
+
+<circle
+ cx="600"
+ cy="205"
+ r="74"
+ stroke="#DFD0B8"
+ stroke-opacity="0.65"
+ stroke-width="1.5"
+/>
+
+  <!-- =================================================== -->
+
+  <!-- GITHUB AVATAR                                       -->
+
+  <!-- =================================================== -->
+
+<image
+ href="https://github.com/FajarAdhitia.png?size=300"
+ x="527"
+ y="132"
+ width="146"
+ height="146"
+ preserveAspectRatio="xMidYMid slice"
+ clip-path="url(#avatarClip)"
+/>
+
+  <!-- =================================================== -->
+
+  <!-- AVATAR FRAME                                        -->
+
+  <!-- =================================================== -->
+
+<circle
+ cx="600"
+ cy="205"
+ r="74"
+ fill="none"
+ stroke="#DFD0B8"
+ stroke-opacity="0.5"
+ stroke-width="1"
+/>
+
+<circle
+cx="600"
+cy="205"
+r="82"
+fill="none"
+stroke="#948979"
+stroke-opacity="0.18"
+stroke-width="1"
+stroke-dasharray="2 9"
+
+>
+
+```
+<animateTransform
+```
+
+```
+  attributeName="transform"
+  type="rotate"
+  from="0 600 205"
+  to="360 600 205"
+  dur="18s"
+  repeatCount="indefinite"
+/>
+```
+
+  </circle>
+
+  <!-- =================================================== -->
+
+  <!-- SCANNING LINE                                       -->
+
+  <!-- =================================================== -->
+
+<line
+x1="530"
+y1="205"
+x2="670"
+y2="205"
+stroke="#DFD0B8"
+stroke-opacity="0.25"
+stroke-width="1"
+
+>
+
+```
+<animate
+```
+
+```
+  attributeName="y1"
+  values="132;278;132"
+  dur="4s"
+  repeatCount="indefinite"
+/>
+
+<animate
+  attributeName="y2"
+  values="132;278;132"
+  dur="4s"
+  repeatCount="indefinite"
+/>
+```
+
+  </line>
+
+  <!-- =================================================== -->
+
+  <!-- NAME                                                -->
+
+  <!-- =================================================== -->
+
+<text
+x="600"
+y="350"
+text-anchor="middle"
+fill="url(#textGradient)"
+font-family="Arial, Helvetica, sans-serif"
+font-size="29"
+font-weight="700"
+letter-spacing="5"
+
+>
+
+```
+FAJAR ADHITIA
+```
+
+  </text>
+
+  <!-- =================================================== -->
+
+  <!-- ROLE                                                -->
+
+  <!-- =================================================== -->
+
+<text
+x="600"
+y="375"
+text-anchor="middle"
+fill="#948979"
+font-family="Arial, Helvetica, sans-serif"
+font-size="11"
+letter-spacing="3"
+
+>
+
+```
+SOFTWARE • IoT • AI • CREATIVE TECHNOLOGY
+```
+
+  </text>
+
+  <!-- =================================================== -->
+
+  <!-- BOTTOM SYSTEM STATUS                                -->
+
+  <!-- =================================================== -->
+
+  <g>
+
+```
+<circle
+  cx="405"
+  cy="404"
+  r="3"
+  fill="#DFD0B8"
+/>
+
+<text
+  x="417"
+  y="408"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="9"
+  letter-spacing="2"
+>
+  BUILDING DIGITAL SYSTEMS
+</text>
+```
 
   </g>
 
+  <g>
 
-  <!-- ============================================================= -->
-  <!-- FINAL BORDER                                                   -->
-  <!-- ============================================================= -->
+```
+<text
+  x="795"
+  y="408"
+  text-anchor="end"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="9"
+  letter-spacing="2"
+>
+  REAL-TIME • INTELLIGENT • INTERACTIVE
+</text>
 
-  <rect
-    x="4"
-    y="4"
-    width="1192"
-    height="422"
-    rx="22"
-    stroke="url(#accent)"
-    stroke-opacity=".10"
-  >
-    <animate
-      attributeName="stroke-opacity"
-      values=".05;.18;.05"
-      dur="8s"
-      repeatCount="indefinite"
-    />
-  </rect>
+<circle
+  cx="807"
+  cy="404"
+  r="3"
+  fill="#DFD0B8"
+/>
+```
+
+  </g>
+
+  <!-- =================================================== -->
+
+  <!-- DECORATIVE CORNERS                                  -->
+
+  <!-- =================================================== -->
+
+<path
+ d="M30 75V30H75"
+ stroke="#DFD0B8"
+ stroke-opacity="0.35"
+/>
+
+<path
+ d="M1125 30H1170V75"
+ stroke="#DFD0B8"
+ stroke-opacity="0.35"
+/>
+
+<path
+ d="M30 355V400H75"
+ stroke="#DFD0B8"
+ stroke-opacity="0.35"
+/>
+
+<path
+ d="M1125 400H1170V355"
+ stroke="#DFD0B8"
+ stroke-opacity="0.35"
+/>
+
+  <!-- =================================================== -->
+
+  <!-- AMBIENT PARTICLES                                   -->
+
+  <!-- =================================================== -->
+
+  <g fill="#DFD0B8">
+
+```
+<circle cx="220" cy="72" r="1.5" opacity="0.5">
+  <animate
+    attributeName="opacity"
+    values="0.15;0.7;0.15"
+    dur="3s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+<circle cx="310" cy="355" r="1" opacity="0.4">
+  <animate
+    attributeName="opacity"
+    values="0.1;0.6;0.1"
+    dur="4s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+<circle cx="910" cy="80" r="1.5" opacity="0.5">
+  <animate
+    attributeName="opacity"
+    values="0.15;0.8;0.15"
+    dur="3.5s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+<circle cx="970" cy="350" r="1" opacity="0.4">
+  <animate
+    attributeName="opacity"
+    values="0.1;0.6;0.1"
+    dur="4.5s"
+    repeatCount="indefinite"
+  />
+</circle>
+```
+
+  </g>
 
 </svg>
