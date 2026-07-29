@@ -33,7 +33,6 @@
   </picture>
 </div>
 
-<br />
   <!-- ===== GITHUB STATS ===== -->
 
 <div align="center">
@@ -67,7 +66,6 @@
   </picture>
 
   <!-- Top Languages -->
-
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
@@ -82,7 +80,6 @@
 
 </div>
 
-<br /> berikan code perbaiknay lengkap
 <!-- ===== CONTRIBUTION SNAKE ===== -->
 
 <div align="center">
