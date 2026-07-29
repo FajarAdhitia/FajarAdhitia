@@ -16,24 +16,31 @@ jobs:
       contents: write
 
     runs-on: ubuntu-latest
+
     timeout-minutes: 10
 
     steps:
+
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
+
         with:
           github_user_name: FajarAdhitia
+
           outputs: |
-            dist/snake-light.svg?color_snake=%230891B2&color_dots=%23ebedf0,%23a5b4fc,%23818cf8,%236366f1,%230891B2
-            dist/snake-dark.svg?color_snake=%23C084FC&color_dots=%232d3343,%234b5563,%237C3AED,%23A78BFA,%2322D3EE
+            dist/snake-light.svg?color_snake=%23948979&color_dots=%23E5E1DA,%23DFD0B8,%23C8BFAF,%23AFA493,%23948979
+            dist/snake-dark.svg?color_snake=%23DFD0B8&color_dots=%23222831,%23393E46,%23535A62,%23746F65,%23948979
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push snake SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
+
         with:
           target_branch: output
           build_dir: dist
           commit_message: "Update snake animation [skip ci]"
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
