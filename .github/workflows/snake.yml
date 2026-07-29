@@ -20,7 +20,6 @@ jobs:
     timeout-minutes: 10
 
     steps:
-
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
 
@@ -28,8 +27,8 @@ jobs:
           github_user_name: FajarAdhitia
 
           outputs: |
-            dist/snake-light.svg?color_snake=%23948979&color_dots=%23E5E1DA,%23DFD0B8,%23C8BFAF,%23AFA493,%23948979
-            dist/snake-dark.svg?color_snake=%23DFD0B8&color_dots=%23222831,%23393E46,%23535A62,%23746F65,%23948979
+            dist/snake-light.svg?color_snake=%232E2A24&color_dots=%23FAF6E9,%23F2EEE2,%23D7D0C0,%236B655A,%232E2A24
+            dist/snake-dark.svg?color_snake=%23F5F1E6&color_dots=%23161616,%23242424,%23A89778,%23E6D7B8,%23F5F1E6
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
