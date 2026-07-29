@@ -1,15 +1,18 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/main/dark.svg"
+    srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects.svg"
   />
+
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/main/light.svg"
+    srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects-light.svg"
   />
+
   <img
-    alt="Fajar Adhitia"
-    src="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/main/light.svg"
+    width="100%"
+    src="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects-light.svg"
+    alt="Fajar's Projects"
   />
 </picture>
 
