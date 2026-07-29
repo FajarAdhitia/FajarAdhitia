@@ -106,33 +106,20 @@
 <br />
 <br />
 
-<!-- ===== SOCIAL BADGES ===== -->
+<!-- ================= SOCIAL ================= -->
 
-<div align="center">
+<p align="center">
 
-  <a href="https://www.linkedin.com/in/fajar-adhitia-suwandhi-418a56221">
-    <img
-      src="https://img.shields.io/badge/LinkedIn-161616?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=161616"
-      alt="LinkedIn"
-    />
-  </a>
+<a href="https://www.linkedin.com/in/fajar-adhitia-suwandhi-418a56221">
+<img src="https://img.shields.io/badge/LinkedIn-161616?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=161616"/>
+</a>
 
-  &nbsp;&nbsp;
+<a href="https://www.instagram.com/fajarradhitia_/">
+<img src="https://img.shields.io/badge/Instagram-161616?style=for-the-badge&logo=instagram&logoColor=E4405F&labelColor=161616"/>
+</a>
 
-  <a href="https://www.instagram.com/fajarradhitia_/">
-    <img
-      src="https://img.shields.io/badge/Instagram-161616?style=for-the-badge&logo=instagram&logoColor=E4405F&labelColor=161616"
-      alt="Instagram"
-    />
-  </a>
+<a href="mailto:fajaradhitia2912@gmail.com">
+<img src="https://img.shields.io/badge/Email-161616?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161616"/>
+</a>
 
-  &nbsp;&nbsp;
-
-  <a href="mailto:fajaradhitia2912@gmail.com">
-    <img
-      src="https://img.shields.io/badge/Email-161616?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161616"
-      alt="Email"
-    />
-  </a>
-
-</div>
+</p>
