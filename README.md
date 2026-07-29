@@ -39,47 +39,65 @@
 
 <div align="center">
 
-  <!-- Streak -->
+  <!-- ===== STREAK ===== -->
 
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://streak-stats.demolab.com/?user=fajaradhitia&hide_border=true&background=161616&stroke=E6D7B8&ring=F5F1E6&fire=E6D7B8&currStreakLabel=F5F1E6&sideLabels=E6D7B8&currStreakNum=F5F1E6&sideNums=F5F1E6&dates=E6D7B8&titleColor=F5F1E6&card_width=1180"
+      srcset="https://streak-stats.demolab.com?user=fajaradhitia&hide_border=true&background=161616&stroke=E6D7B8&ring=F5F1E6&fire=E6D7B8&currStreakLabel=F5F1E6&sideLabels=E6D7B8&currStreakNum=F5F1E6&sideNums=F5F1E6&dates=E6D7B8&titleColor=F5F1E6&theme=dark&cache_seconds=60"
     />
+
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://streak-stats.demolab.com?user=fajaradhitia&hide_border=true&background=FAF6E9&stroke=2E2A24&ring=6B655A&fire=2E2A24&currStreakLabel=2E2A24&sideLabels=6B655A&currStreakNum=2E2A24&sideNums=2E2A24&dates=6B655A&titleColor=2E2A24&theme=default&cache_seconds=60"
+    />
+
     <img
       width="100%"
-      src="https://streak-stats.demolab.com/?user=fajaradhitia&hide_border=true&background=FAF6E9&stroke=2E2A24&ring=6B655A&fire=2E2A24&currStreakLabel=2E2A24&sideLabels=6B655A&currStreakNum=2E2A24&sideNums=2E2A24&dates=6B655A&titleColor=2E2A24&card_width=1180"
-      alt="Fajar's GitHub streak"
+      alt="GitHub Streak"
+      src="https://streak-stats.demolab.com?user=fajaradhitia&hide_border=true&background=FAF6E9&stroke=2E2A24&ring=6B655A&fire=2E2A24&currStreakLabel=2E2A24&sideLabels=6B655A&currStreakNum=2E2A24&sideNums=2E2A24&dates=6B655A&titleColor=2E2A24&theme=default"
     />
   </picture>
 
-  <br />
+  <br /><br />
 
-  <!-- GitHub Stats -->
+  <!-- ===== GITHUB STATS ===== -->
 
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=fajaradhitia&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=F5F1E6&icon_color=E6D7B8&text_color=E6D7B8&bg_color=161616&card_width=500"
+      srcset="https://github-readme-stats.vercel.app/api?username=fajaradhitia&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&bg_color=161616&title_color=F5F1E6&text_color=E6D7B8&icon_color=E6D7B8&theme=transparent&cache_seconds=60"
     />
+
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github-readme-stats.vercel.app/api?username=fajaradhitia&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&bg_color=FAF6E9&title_color=2E2A24&text_color=6B655A&icon_color=6B655A&theme=transparent&cache_seconds=60"
+    />
+
     <img
       width="49%"
-      src="https://github-readme-stats-sigma-rosy-28.vercel.app/api?username=fajaradhitia&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=2E2A24&icon_color=6B655A&text_color=6B655A&bg_color=FAF6E9&card_width=500"
-      alt="Fajar's GitHub stats"
+      alt="GitHub Stats"
+      src="https://github-readme-stats.vercel.app/api?username=fajaradhitia&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&bg_color=FAF6E9&title_color=2E2A24&text_color=6B655A&icon_color=6B655A&theme=transparent"
     />
   </picture>
 
-  <!-- Top Languages -->
+  <!-- ===== TOP LANGUAGES ===== -->
 
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=fajaradhitia&layout=compact&langs_count=8&hide_border=true&title_color=F5F1E6&text_color=E6D7B8&bg_color=161616&card_width=500"
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=fajaradhitia&layout=compact&langs_count=8&hide_border=true&bg_color=161616&title_color=F5F1E6&text_color=E6D7B8&theme=transparent&cache_seconds=60"
     />
+
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=fajaradhitia&layout=compact&langs_count=8&hide_border=true&bg_color=FAF6E9&title_color=2E2A24&text_color=6B655A&theme=transparent&cache_seconds=60"
+    />
+
     <img
       width="49%"
-      src="https://github-readme-stats-sigma-rosy-28.vercel.app/api/top-langs/?username=fajaradhitia&layout=compact&langs_count=8&hide_border=true&title_color=2E2A24&text_color=6B655A&bg_color=FAF6E9&card_width=500"
-      alt="Fajar's top languages"
+      alt="Top Languages"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=fajaradhitia&layout=compact&langs_count=8&hide_border=true&bg_color=FAF6E9&title_color=2E2A24&text_color=6B655A&theme=transparent"
     />
   </picture>
 
