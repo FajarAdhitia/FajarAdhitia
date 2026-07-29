@@ -92,7 +92,7 @@
 <div align="center">
   <img
     width="100%"
-    src="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/main/projects/projects.svg"
+    src="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/main/projects.svg"
     alt="Projects"
   />
 </div>
