@@ -1,1 +1,940 @@
+<svg
+  width="1200"
+  height="430"
+  viewBox="0 0 1200 430"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
 
+<defs>
+
+  <!-- ================================================= -->
+  <!-- COLOR PALETTE                                     -->
+  <!-- #161616 = background                              -->
+  <!-- #393E46 = secondary                               -->
+  <!-- #948979 = accent                                 -->
+  <!-- #DFD0B8 = highlight                               -->
+  <!-- ================================================= -->
+
+  <linearGradient
+    id="bg"
+    x1="0"
+    y1="0"
+    x2="1200"
+    y2="430"
+    gradientUnits="userSpaceOnUse"
+  >
+    <stop offset="0" stop-color="#161616"/>
+    <stop offset="0.5" stop-color="#393E46"/>
+    <stop offset="1" stop-color="#161616"/>
+  </linearGradient>
+
+  <radialGradient
+    id="coreGlow"
+    cx="0"
+    cy="0"
+    r="1"
+    gradientUnits="userSpaceOnUse"
+    gradientTransform="translate(600 190) rotate(90) scale(220 350)"
+  >
+    <stop
+      offset="0"
+      stop-color="#DFD0B8"
+      stop-opacity="0.14"
+    />
+    <stop
+      offset="0.45"
+      stop-color="#948979"
+      stop-opacity="0.06"
+    />
+    <stop
+      offset="1"
+      stop-color="#161616"
+      stop-opacity="0"
+    />
+  </radialGradient>
+
+  <linearGradient
+    id="accent"
+    x1="500"
+    y1="100"
+    x2="700"
+    y2="280"
+    gradientUnits="userSpaceOnUse"
+  >
+    <stop offset="0" stop-color="#DFD0B8"/>
+    <stop offset="0.5" stop-color="#948979"/>
+    <stop offset="1" stop-color="#DFD0B8"/>
+  </linearGradient>
+
+  <linearGradient
+    id="nameGradient"
+    x1="450"
+    y1="0"
+    x2="750"
+    y2="0"
+    gradientUnits="userSpaceOnUse"
+  >
+    <stop offset="0" stop-color="#948979"/>
+    <stop offset="0.5" stop-color="#DFD0B8"/>
+    <stop offset="1" stop-color="#948979"/>
+  </linearGradient>
+
+  <!-- Background grid -->
+
+  <pattern
+    id="grid"
+    width="40"
+    height="40"
+    patternUnits="userSpaceOnUse"
+  >
+    <path
+      d="M40 0H0V40"
+      stroke="#DFD0B8"
+      stroke-opacity="0.035"
+      stroke-width="1"
+    />
+  </pattern>
+
+  <!-- Avatar circle -->
+
+  <clipPath id="avatarClip">
+    <circle
+      cx="600"
+      cy="190"
+      r="65"
+    />
+  </clipPath>
+
+  <!-- Soft glow -->
+
+  <filter
+    id="glow"
+    x="-100%"
+    y="-100%"
+    width="300%"
+    height="300%"
+  >
+    <feGaussianBlur
+      stdDeviation="6"
+    />
+  </filter>
+
+</defs>
+
+
+<!-- ===================================================== -->
+<!-- BACKGROUND                                            -->
+<!-- ===================================================== -->
+
+<rect
+  width="1200"
+  height="430"
+  rx="22"
+  fill="url(#bg)"
+/>
+
+<rect
+  width="1200"
+  height="430"
+  rx="22"
+  fill="url(#grid)"
+/>
+
+<ellipse
+  cx="600"
+  cy="195"
+  rx="370"
+  ry="225"
+  fill="url(#coreGlow)"
+/>
+
+
+<!-- ===================================================== -->
+<!-- OUTER FRAME                                           -->
+<!-- ===================================================== -->
+
+<rect
+  x="16"
+  y="16"
+  width="1168"
+  height="398"
+  rx="18"
+  stroke="#DFD0B8"
+  stroke-opacity="0.12"
+  stroke-width="1"
+/>
+
+
+<!-- ===================================================== -->
+<!-- CORNER MARKS                                          -->
+<!-- ===================================================== -->
+
+<path
+  d="M35 78V35H78"
+  stroke="#DFD0B8"
+  stroke-opacity="0.5"
+  stroke-width="1"
+/>
+
+<path
+  d="M1122 35H1165V78"
+  stroke="#DFD0B8"
+  stroke-opacity="0.5"
+  stroke-width="1"
+/>
+
+<path
+  d="M35 352V395H78"
+  stroke="#DFD0B8"
+  stroke-opacity="0.5"
+  stroke-width="1"
+/>
+
+<path
+  d="M1122 395H1165V352"
+  stroke="#DFD0B8"
+  stroke-opacity="0.5"
+  stroke-width="1"
+/>
+
+
+<!-- ===================================================== -->
+<!-- HEADER                                                -->
+<!-- ===================================================== -->
+
+<text
+  x="600"
+  y="48"
+  text-anchor="middle"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="10"
+  letter-spacing="4"
+>
+  FAJAR ADHITIA SUWANDHI • PROGRAMMER
+</text>
+
+
+<!-- ===================================================== -->
+<!-- LEFT — IoT                                            -->
+<!-- ===================================================== -->
+
+<line
+  x1="90"
+  y1="125"
+  x2="470"
+  y2="173"
+  stroke="#948979"
+  stroke-opacity="0.28"
+  stroke-width="1"
+/>
+
+<circle
+  cx="90"
+  cy="125"
+  r="3"
+  fill="#DFD0B8"
+/>
+
+<circle
+  cx="90"
+  cy="125"
+  r="9"
+  stroke="#DFD0B8"
+  stroke-opacity="0.15"
+/>
+
+<text
+  x="90"
+  y="101"
+  fill="#DFD0B8"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="14"
+  font-weight="700"
+  letter-spacing="2"
+>
+  WEB ENGINEERING
+</text>
+
+<text
+  x="90"
+  y="144"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="10"
+  letter-spacing="1.4"
+>
+  JAVASCRIPT • HTML • CSS • LARAVEL
+</text>
+
+
+<!-- ===================================================== -->
+<!-- LEFT — AI                                            -->
+<!-- ===================================================== -->
+
+<line
+  x1="90"
+  y1="290"
+  x2="470"
+  y2="220"
+  stroke="#948979"
+  stroke-opacity="0.28"
+  stroke-width="1"
+/>
+
+<circle
+  cx="90"
+  cy="290"
+  r="3"
+  fill="#DFD0B8"
+/>
+
+<circle
+  cx="90"
+  cy="290"
+  r="9"
+  stroke="#DFD0B8"
+  stroke-opacity="0.15"
+/>
+
+<text
+  x="90"
+  y="266"
+  fill="#DFD0B8"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="14"
+  font-weight="700"
+  letter-spacing="2"
+>
+  UI / UX DESIGN
+</text>
+
+<text
+  x="90"
+  y="309"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="10"
+  letter-spacing="1.4"
+>
+  FIGMA • XD • PROTOTYPE
+</text>
+
+
+<!-- ===================================================== -->
+<!-- RIGHT — WEB                                          -->
+<!-- ===================================================== -->
+
+<line
+  x1="1110"
+  y1="125"
+  x2="730"
+  y2="173"
+  stroke="#948979"
+  stroke-opacity="0.28"
+  stroke-width="1"
+/>
+
+<circle
+  cx="1110"
+  cy="125"
+  r="3"
+  fill="#DFD0B8"
+/>
+
+<circle
+  cx="1110"
+  cy="125"
+  r="9"
+  stroke="#DFD0B8"
+  stroke-opacity="0.15"
+/>
+
+<text
+  x="1110"
+  y="101"
+  text-anchor="end"
+  fill="#DFD0B8"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="14"
+  font-weight="700"
+  letter-spacing="2"
+>
+  VIDEO EDITOR
+</text>
+
+<text
+  x="1110"
+  y="144"
+  text-anchor="end"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="10"
+  letter-spacing="1.4"
+>
+  PREMIERE PRO • AFTER EFFECTS • 
+</text>
+
+
+<!-- ===================================================== -->
+<!-- RIGHT — APP / CLOUD                                  -->
+<!-- ===================================================== -->
+
+<line
+  x1="1110"
+  y1="290"
+  x2="730"
+  y2="220"
+  stroke="#948979"
+  stroke-opacity="0.28"
+  stroke-width="1"
+/>
+
+<circle
+  cx="1110"
+  cy="290"
+  r="3"
+  fill="#DFD0B8"
+/>
+
+<circle
+  cx="1110"
+  cy="290"
+  r="9"
+  stroke="#DFD0B8"
+  stroke-opacity="0.15"
+/>
+
+<text
+  x="1110"
+  y="266"
+  text-anchor="end"
+  fill="#DFD0B8"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="14"
+  font-weight="700"
+  letter-spacing="2"
+>
+  APP &amp; CLOUD
+</text>
+
+<text
+  x="1110"
+  y="309"
+  text-anchor="end"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="10"
+  letter-spacing="1.4"
+>
+  KOTLIN • ANDROID • FIREBASE
+</text>
+
+
+<!-- ===================================================== -->
+<!-- ORBIT SYSTEM                                          -->
+<!-- ===================================================== -->
+
+<ellipse
+  cx="600"
+  cy="190"
+  rx="145"
+  ry="63"
+  stroke="#948979"
+  stroke-opacity="0.26"
+  stroke-width="1"
+  transform="rotate(-18 600 190)"
+/>
+
+<ellipse
+  cx="600"
+  cy="190"
+  rx="176"
+  ry="82"
+  stroke="#DFD0B8"
+  stroke-opacity="0.12"
+  stroke-width="1"
+  transform="rotate(28 600 190)"
+/>
+
+<ellipse
+  cx="600"
+  cy="190"
+  rx="212"
+  ry="101"
+  stroke="#948979"
+  stroke-opacity="0.08"
+  stroke-width="1"
+  transform="rotate(-35 600 190)"
+/>
+
+
+<!-- ===================================================== -->
+<!-- ROTATING ORBIT                                       -->
+<!-- ===================================================== -->
+
+<ellipse
+  cx="600"
+  cy="190"
+  rx="190"
+  ry="88"
+  stroke="url(#accent)"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-dasharray="7 15"
+  opacity="0.7"
+  transform="rotate(-20 600 190)"
+>
+
+  <animateTransform
+    attributeName="transform"
+    attributeType="XML"
+    type="rotate"
+    from="-20 600 190"
+    to="340 600 190"
+    dur="24s"
+    repeatCount="indefinite"
+  />
+
+</ellipse>
+
+
+<!-- ===================================================== -->
+<!-- CENTRAL GLOW                                         -->
+<!-- ===================================================== -->
+
+<circle
+  cx="600"
+  cy="190"
+  r="88"
+  stroke="#DFD0B8"
+  stroke-opacity="0.08"
+  stroke-width="14"
+  filter="url(#glow)"
+/>
+
+
+<!-- ===================================================== -->
+<!-- AVATAR BACK PLATE                                    -->
+<!-- ===================================================== -->
+
+<circle
+  cx="600"
+  cy="190"
+  r="77"
+  fill="#161616"
+  stroke="#948979"
+  stroke-opacity="0.5"
+  stroke-width="1"
+/>
+
+<circle
+  cx="600"
+  cy="190"
+  r="70"
+  fill="#393E46"
+  stroke="#DFD0B8"
+  stroke-opacity="0.65"
+  stroke-width="1.5"
+/>
+
+
+<!-- ===================================================== -->
+<!-- GITHUB PROFILE PHOTO                                 -->
+<!-- ===================================================== -->
+<!--
+  IMPORTANT:
+  This is embedded directly as Base64.
+  No external image URL is used.
+-->
+
+<image
+  x="535"
+  y="125"
+  width="130"
+  height="130"
+  preserveAspectRatio="xMidYMid slice"
+  clip-path="url(#avatarClip)"
+  href="data:image/jpeg;base64,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"
+/>
+
+
+<!-- ===================================================== -->
+<!-- AVATAR FRAME                                         -->
+<!-- ===================================================== -->
+
+<circle
+  cx="600"
+  cy="190"
+  r="65"
+  fill="none"
+  stroke="#DFD0B8"
+  stroke-opacity="0.25"
+  stroke-width="1"
+/>
+
+<circle
+  cx="600"
+  cy="190"
+  r="76"
+  fill="none"
+  stroke="#DFD0B8"
+  stroke-opacity="0.55"
+  stroke-width="1.5"
+/>
+
+
+<!-- ===================================================== -->
+<!-- HUD RING 1                                           -->
+<!-- ===================================================== -->
+
+<circle
+  cx="600"
+  cy="190"
+  r="83"
+  fill="none"
+  stroke="#948979"
+  stroke-opacity="0.28"
+  stroke-width="1"
+  stroke-dasharray="2 8"
+>
+
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    from="0 600 190"
+    to="360 600 190"
+    dur="18s"
+    repeatCount="indefinite"
+  />
+
+</circle>
+
+
+<!-- ===================================================== -->
+<!-- HUD RING 2                                           -->
+<!-- ===================================================== -->
+
+<circle
+  cx="600"
+  cy="190"
+  r="90"
+  fill="none"
+  stroke="#DFD0B8"
+  stroke-opacity="0.15"
+  stroke-width="1"
+  stroke-dasharray="18 25"
+>
+
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    from="360 600 190"
+    to="0 600 190"
+    dur="30s"
+    repeatCount="indefinite"
+  />
+
+</circle>
+
+
+<!-- ===================================================== -->
+<!-- SCANNER                                              -->
+<!-- ===================================================== -->
+
+<line
+  x1="538"
+  y1="125"
+  x2="662"
+  y2="125"
+  stroke="#DFD0B8"
+  stroke-opacity="0.4"
+  stroke-width="1"
+>
+
+  <animate
+    attributeName="y1"
+    values="125;255;125"
+    dur="4s"
+    repeatCount="indefinite"
+  />
+
+  <animate
+    attributeName="y2"
+    values="125;255;125"
+    dur="4s"
+    repeatCount="indefinite"
+  />
+
+</line>
+
+
+<!-- ===================================================== -->
+<!-- CORE NODES                                           -->
+<!-- ===================================================== -->
+
+<circle
+  cx="510"
+  cy="190"
+  r="3"
+  fill="#DFD0B8"
+>
+  <animate
+    attributeName="opacity"
+    values="0.2;1;0.2"
+    dur="2s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+<circle
+  cx="690"
+  cy="190"
+  r="3"
+  fill="#DFD0B8"
+>
+  <animate
+    attributeName="opacity"
+    values="1;0.2;1"
+    dur="2s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+<circle
+  cx="600"
+  cy="100"
+  r="3"
+  fill="#DFD0B8"
+>
+  <animate
+    attributeName="opacity"
+    values="0.2;1;0.2"
+    dur="2.5s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+<circle
+  cx="600"
+  cy="280"
+  r="3"
+  fill="#DFD0B8"
+>
+  <animate
+    attributeName="opacity"
+    values="1;0.2;1"
+    dur="2.5s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+
+<!-- ===================================================== -->
+<!-- SYSTEM LABELS                                        -->
+<!-- ===================================================== -->
+
+<text
+  x="600"
+  y="92"
+  text-anchor="middle"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="7"
+  letter-spacing="2"
+>
+  FRONT END
+</text>
+
+<text
+  x="600"
+  y="293"
+  text-anchor="middle"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="7"
+  letter-spacing="2"
+>
+  BACK END
+</text>
+
+
+<!-- ===================================================== -->
+<!-- NAME                                                 -->
+<!-- ===================================================== -->
+
+<text
+  x="600"
+  y="345"
+  text-anchor="middle"
+  fill="url(#nameGradient)"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="28"
+  font-weight="700"
+  letter-spacing="5"
+>
+  FAJAR ADHITIA SUWANDHI
+</text>
+
+
+<!-- ===================================================== -->
+<!-- ROLE                                                 -->
+<!-- ===================================================== -->
+
+<text
+  x="600"
+  y="369"
+  text-anchor="middle"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="10"
+  letter-spacing="3"
+>
+  SOFTWARE ENGGINER
+</text>
+
+
+<!-- ===================================================== -->
+<!-- STATUS LEFT                                          -->
+<!-- ===================================================== -->
+
+<circle
+  cx="390"
+  cy="399"
+  r="3"
+  fill="#DFD0B8"
+>
+  <animate
+    attributeName="opacity"
+    values="0.3;1;0.3"
+    dur="2s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+<text
+  x="402"
+  y="403"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="8"
+  letter-spacing="2"
+>
+  BUILDING DIGITAL SYSTEMS
+</text>
+
+
+<!-- ===================================================== -->
+<!-- STATUS RIGHT                                         -->
+<!-- ===================================================== -->
+
+<text
+  x="798"
+  y="403"
+  text-anchor="end"
+  fill="#948979"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="8"
+  letter-spacing="2"
+>
+  INTELLIGENT • INTERACTIVE
+</text>
+
+<circle
+  cx="810"
+  cy="399"
+  r="3"
+  fill="#DFD0B8"
+>
+  <animate
+    attributeName="opacity"
+    values="1;0.3;1"
+    dur="2s"
+    repeatCount="indefinite"
+  />
+</circle>
+
+
+<!-- ===================================================== -->
+<!-- AMBIENT PARTICLES                                    -->
+<!-- ===================================================== -->
+
+<g fill="#DFD0B8">
+
+  <circle cx="210" cy="75" r="1.5">
+    <animate
+      attributeName="opacity"
+      values="0.1;0.8;0.1"
+      dur="3s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle cx="295" cy="350" r="1">
+    <animate
+      attributeName="opacity"
+      values="0.1;0.6;0.1"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle cx="900" cy="75" r="1.5">
+    <animate
+      attributeName="opacity"
+      values="0.1;0.8;0.1"
+      dur="3.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle cx="975" cy="350" r="1">
+    <animate
+      attributeName="opacity"
+      values="0.1;0.7;0.1"
+      dur="4.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle cx="170" cy="215" r="1">
+    <animate
+      attributeName="opacity"
+      values="0.1;0.5;0.1"
+      dur="5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle cx="1030" cy="215" r="1">
+    <animate
+      attributeName="opacity"
+      values="0.1;0.6;0.1"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- MICRO DECORATION                                     -->
+<!-- ===================================================== -->
+
+<g
+  stroke="#948979"
+  stroke-opacity="0.25"
+  stroke-width="1"
+>
+
+  <line x1="240" y1="45" x2="300" y2="45"/>
+  <line x1="900" y1="45" x2="960" y2="45"/>
+
+  <line x1="240" y1="385" x2="300" y2="385"/>
+  <line x1="900" y1="385" x2="960" y2="385"/>
+
+</g>
+
+</svg>
