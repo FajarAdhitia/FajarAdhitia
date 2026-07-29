@@ -1,26 +1,45 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects.svg"
+    srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/main/dark.svg"
   />
-
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects-light.svg"
+    srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/main/light.svg"
   />
-
   <img
-    width="100%"
-    src="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects-light.svg"
-    alt="Fajar's Projects"
+    alt="Fajar Adhitia"
+    src="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/main/light.svg"
   />
 </picture>
+
+<!-- ===== PROJECTS ===== -->
+
+<div align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects-light.svg"
+    />
+    <img
+      width="100%"
+      src="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/projects/projects-light.svg"
+      alt="Fajar's Projects"
+    />
+  </picture>
+</div>
+
+<br />
 
 <!-- ===== GITHUB STATS ===== -->
 
 <div align="center">
 
-  <!-- Streak — full width -->
+  <!-- Streak -->
 
   <picture>
     <source
@@ -34,9 +53,9 @@
     />
   </picture>
 
-  <br/>
+  <br />
 
-  <!-- Stats + Top languages — side by side -->
+  <!-- GitHub Stats -->
 
   <picture>
     <source
@@ -49,6 +68,8 @@
       alt="Fajar's GitHub stats"
     />
   </picture>
+
+  <!-- Top Languages -->
 
   <picture>
     <source
@@ -64,6 +85,8 @@
 
 </div>
 
+<br />
+
 <!-- ===== CONTRIBUTION SNAKE ===== -->
 
 <div align="center">
@@ -71,15 +94,15 @@
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/output/snake-dark.svg"
+      srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/output/snake-dark.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/output/snake-light.svg"
+      srcset="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/output/snake-light.svg"
     />
     <img
-      alt="Snake eating my contributions"
-      src="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/output/snake-light.svg"
+      alt="Fajar's contribution snake"
+      src="https://raw.githubusercontent.com/FajarAdhitia/FajarAdhitia/output/snake-light.svg"
     />
   </picture>
 
@@ -87,35 +110,23 @@
 
 <!-- ===== END SNAKE ===== -->
 
-<br/>
-<br/>
-
-<!-- ===== PROJECTS ===== -->
-
-<div align="center">
-  <img
-    width="100%"
-    src="https://raw.githubusercontent.com/fajaradhitia/fajaradhitia/main/projects.svg"
-    alt="Projects"
-  />
-</div>
+<br />
+<br />
 
 <!-- ===== SOCIAL BADGES ===== -->
 
-<br/>
-
 <div align="center">
 
-  <a href="https://www.linkedin.com/in/arif-hasan-672249358/">
+  <a href="https://www.linkedin.com/in/fajar-adhitia-suwandhi/">
     <img
-      src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logoColor=white&labelColor=0A101F&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJ3aGl0ZSI+PHBhdGggZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg=="
+      src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F"
       alt="LinkedIn"
     />
   </a>
 
   
 
-  <a href="https://www.instagram.com/arifhaxn/">
+  <a href="https://www.instagram.com/fajaradhitia/">
     <img
       src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F"
       alt="Instagram"
@@ -124,22 +135,11 @@
 
   
 
-  <a href="https://www.facebook.com/arifhaxnn">
-    <img
-      src="https://img.shields.io/badge/Facebook-0A101F?style=for-the-badge&logo=facebook&logoColor=22D3EE&labelColor=0A101F"
-      alt="Facebook"
-    />
-  </a>
-
-  
-
-  <a href="mailto:arifhasan.connect@gmail.com">
+  <a href="mailto:fajaradhitia2912@gmail.com">
     <img
       src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F"
       alt="Email"
     />
   </a>
-
-  
 
 </div>
