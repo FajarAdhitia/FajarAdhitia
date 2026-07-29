@@ -11,27 +11,27 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 DARK = {
-    "background": "#222831",
-    "surface": "#393E46",
-    "surface_2": "#30353D",
-    "accent": "#948979",
-    "highlight": "#DFD0B8",
-    "text": "#DFD0B8",
-    "muted": "#948979",
-    "border": "#948979",
-    "border_soft": "#525862",
+    "background": "#161616",  
+    "surface": "#242424",  
+    "surface_2": "#1D1D1D",  
+    "accent": "#E6D7B8",         
+    "highlight": "#F5F1E6",
+    "text": "#F5F1E6",
+    "muted": "#E6D7B8",
+    "border": "#E6D7B8",
+    "border_soft": "#3A3A3A",
 }
 
 LIGHT = {
-    "background": "#DFD0B8",
-    "surface": "#F5F1EA",
+    "background": "#FAF6E9",   
+    "surface": "#F2EEE2", 
     "surface_2": "#FFFFFF",
-    "accent": "#948979",
-    "highlight": "#393E46",
-    "text": "#222831",
-    "muted": "#393E46",
-    "border": "#948979",
-    "border_soft": "#C8BFAF",
+    "accent": "#2E2A24", 
+    "highlight": "#6B655A", 
+    "text": "#2E2A24",
+    "muted": "#6B655A",
+    "border": "#2E2A24",
+    "border_soft": "#D9D2C2",
 }
 
 
