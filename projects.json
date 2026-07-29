@@ -1,1 +1,26 @@
-
+[
+{
+"name": "FajarAdhitia",
+"repo": "fajaradhitia/FajarAdhitia",
+"description": "Personal portfolio and GitHub profile website",
+"tags": ["HTML", "CSS", "JavaScript"]
+},
+{
+"name": "BanyuWaterGuard",
+"repo": "fajaradhitia/BanyuWaterGuard",
+"description": "IoT-based water quality monitoring application",
+"tags": ["Kotlin", "Android", "IoT"]
+},
+{
+"name": "UAS DeepLearning",
+"repo": "fajaradhitia/UAS_DeepLearning",
+"description": "Deep learning and machine learning project",
+"tags": ["Python", "Deep Learning", "Jupyter"]
+},
+{
+"name": "InventarisLab",
+"repo": "fajaradhitia/InventarisLab",
+"description": "Laboratory inventory management application",
+"tags": ["JavaScript", "Web", "Firebase"]
+}
+]
