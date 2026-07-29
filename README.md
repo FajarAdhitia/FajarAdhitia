@@ -117,7 +117,7 @@
 
 <div align="center">
 
-  <a href="https://www.linkedin.com/in/fajar-adhitia-suwandhi/">
+  <a href="https://www.linkedin.com/in/fajar-adhitia-suwandhi-418a56221">
     <img
       src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A101F"
       alt="LinkedIn"
@@ -126,7 +126,7 @@
 
   
 
-  <a href="https://www.instagram.com/fajaradhitia/">
+  <a href="https://www.instagram.com/fajarradhitia_/">
     <img
       src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F"
       alt="Instagram"
